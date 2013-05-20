@@ -70,6 +70,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
 
     [window addSubview:tabBarController.view];
+    [window setRootViewController:tabBarController];  //ios 6.0   ******************  IMPORTANT.
 
 
     self.myWebService = [[[WebService alloc] init] autorelease];
